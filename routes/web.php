@@ -49,8 +49,8 @@ Route::prefix('locataire')->group(function () {
 
 });
 
-Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLocataire'])
-    ->name('locataire.dashboard');
+Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLocataire'])->name('locataire.dashboard');
+Route::get('/locataire/signalement', [GestLocataireController::class, 'signalementLocataire'])->name('locataire.signalement');
 
 //Proprietaire
 Route::prefix('propriétaire')->group(function () {
