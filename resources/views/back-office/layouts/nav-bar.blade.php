@@ -17,7 +17,7 @@
                 <li class="menu-title">Mes paramètres</li>
 
                 <li>
-                    <a href="#"><i class=" fas fa-home"></i> <span>Accueil</span></a>
+                    <a href="{{ route('locataire.dashboard') }}"><i class=" fas fa-home"></i> <span>Accueil</span></a>
                 </li>
                 <li>
                     <a href="#"><i class=" fas fa-piggy-bank"></i> <span>Compte</span></a>
@@ -26,7 +26,7 @@
                     <a href="#"><i class=" fas fa-envelope-open-text"></i> <span>Message</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-exclamation-triangle"></i> <span>Signalements</span></a>
+                    <a href="{{ route('locataire.signalement') }}"><i class="fas fa-exclamation-triangle"></i> <span>Signalements</span></a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-folder"></i> <span>Documents</span></a>
