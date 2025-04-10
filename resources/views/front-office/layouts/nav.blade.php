@@ -28,9 +28,13 @@
                         <li class="nav-item dropdown dropdown-mega">
                             <a class="nav-link" href="#" data-bs-toggle="dropdown">Location</a>
                         </li>
-                        <li class="nav-item dropdown dropdown-mega">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown">Vacances</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >Vacances</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('locataire.dashboard') }}">Locataire</a>
+                        </li>
+
                     </ul>
 
                     <!-- Ajout des boutons "Nous contacter" et "Connexion" dans le offcanvas -->

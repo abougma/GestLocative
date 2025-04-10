@@ -76,7 +76,7 @@ class Response
     private $score;
 
     /**
-     * Action as specified by the page
+     * Action as specified by the pages
      * @var string
      */
     private $action;

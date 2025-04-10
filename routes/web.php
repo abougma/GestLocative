@@ -45,10 +45,12 @@ Route::prefix('gestionnaire')->group(function () {
 Route::prefix('locataire')->group(function () {
 
     Route::middleware(['auth', 'role:locataire'])->group(function () {
-        Route::get('/dashboard', [GestLocataireController::class, 'dashboardLocataire'])
-            ->name('locataire.dashboard');
     });
+
 });
+
+Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLocataire'])
+    ->name('locataire.dashboard');
 
 //Proprietaire
 Route::prefix('propriétaire')->group(function () {

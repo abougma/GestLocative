@@ -39,7 +39,7 @@ var theme = {
   },
   /**
    * Sticky Header
-   * Enables sticky behavior on navbar on page scroll
+   * Enables sticky behavior on navbar on pages scroll
    * Requires assets/js/vendor/headhesive.min.js
   */
   stickyHeader: () => {
@@ -585,10 +585,10 @@ var theme = {
   },
   /**
    * Loader
-   * 
+   *
    */
   loader: () => {
-    var preloader = document.querySelector('.page-loader');
+    var preloader = document.querySelector('.pages-loader');
     if(preloader != null) {
       document.body.onload = function(){
         setTimeout(function() {
@@ -602,7 +602,7 @@ var theme = {
   },
   /**
    * Page Progress
-   * Shows page progress on the bottom right corner of pages
+   * Shows pages progress on the bottom right corner of pages
    */
   pageProgress: () => {
     var progressWrap = document.querySelector('.progress-wrap');
@@ -630,7 +630,7 @@ var theme = {
       progressWrap.addEventListener('click', function(e) {
         e.preventDefault();
         window.scroll({
-          top: 0, 
+          top: 0,
           left: 0,
           behavior: 'smooth'
         });
@@ -703,7 +703,7 @@ var theme = {
         myModalPopup.show();
       }, 200);
     }
-    // Fixes jumping of page progress caused by modal
+    // Fixes jumping of pages progress caused by modal
     var innerWidth = window.innerWidth;
     var clientWidth = document.body.clientWidth;
     var scrollSize = innerWidth - clientWidth;
@@ -759,14 +759,14 @@ var theme = {
       "use strict";
       window.addEventListener("load", function() {
         var forms = document.querySelectorAll(".needs-validation");
-        var inputRecaptcha = document.querySelector("input[data-recaptcha]"); 
+        var inputRecaptcha = document.querySelector("input[data-recaptcha]");
         window.verifyRecaptchaCallback = function (response) {
-          inputRecaptcha.value = response; 
+          inputRecaptcha.value = response;
           inputRecaptcha.dispatchEvent(new Event("change"));
         }
         window.expiredRecaptchaCallback = function () {
-          var inputRecaptcha = document.querySelector("input[data-recaptcha]"); 
-          inputRecaptcha.value = ""; 
+          var inputRecaptcha = document.querySelector("input[data-recaptcha]");
+          inputRecaptcha.value = "";
           inputRecaptcha.dispatchEvent(new Event("change"));
         }
         var validation = Array.prototype.filter.call(forms, function(form) {
@@ -825,9 +825,9 @@ var theme = {
           passToggle.classList.add('uil-eye-slash');
         } else {
           passInput.type = "password";
-          passToggle.classList.remove('uil-eye-slash'); 
+          passToggle.classList.remove('uil-eye-slash');
           passToggle.classList.add('uil-eye');
-        } 
+        }
       }, false);
     }
   },

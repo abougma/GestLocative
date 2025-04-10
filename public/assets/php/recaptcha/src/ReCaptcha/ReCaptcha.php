@@ -231,7 +231,7 @@ class ReCaptcha
 
     /**
      * Provide an action to match against in verify()
-     * This should be set per page.
+     * This should be set per pages.
      *
      * @param string $action Expected action
      * @return ReCaptcha Current instance for fluent interface
