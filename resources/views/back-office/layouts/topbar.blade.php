@@ -31,14 +31,13 @@
         <!-- End navbar brand -->
 
         <!-- Start menu -->
-        <div class="d-flex justify-content-between menu-sm px-3 ms-auto">
-
-            <div class="d-flex align-items-center gap-2" style="float: right">
+        <div class="d-flex justify-content-end menu-sm px-3">
+            <div class="d-flex align-items-center gap-2">
                 <!-- Start Notification -->
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn btn-sm top-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-bell align-middle"></i>
-                        <span class="btn-marker"><i class="marker marker-dot text-danger"></i><span>
+                        <span class="btn-marker"><i class="marker marker-dot text-danger"></i></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-md dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
                         <div class="p-3 bg-info">
@@ -55,12 +54,12 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-primary me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-file-document-outline"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-file-document-outline"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
-                                        <h6 class="mb-1">New report has been recived</h6>
+                                        <h6 class="mb-1">New report has been received</h6>
                                         <div class="fs-12 text-muted">
                                             <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
                                         </div>
@@ -71,9 +70,9 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-success me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-cart-variant"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-cart-variant"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="mb-1">Last order was completed</h6>
@@ -87,9 +86,9 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-danger me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-account-group"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-account-group"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="mb-1">Completed meeting canceled</h6>
@@ -103,9 +102,9 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-warning me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-send-outline"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-send-outline"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="mb-1">New feedback received</h6>
@@ -119,9 +118,9 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-secondary me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-download-box"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-download-box"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="mb-1">New update was available</h6>
@@ -135,9 +134,9 @@
                             <a href="#" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="avatar avatar-xs avatar-label-info me-3">
-                                            <span class="rounded fs-16">
-                                                <i class="mdi mdi-hexagram-outline"></i>
-                                            </span>
+                                <span class="rounded fs-16">
+                                    <i class="mdi mdi-hexagram-outline"></i>
+                                </span>
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="mb-1">Your password was changed</h6>
@@ -161,7 +160,7 @@
                 <!-- End Notification -->
 
                 <!-- Start Profile -->
-                <div class="dropdown d-inline-block" style="float: right;">
+                <div class="dropdown d-inline-block">
                     <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="rounded-circle avatar-2xs border border-secondary" src="admin-assets/assets/images/users/avatar-6.png" alt="Header Avatar" style="width: 32px; height: 32px;">
                     </button>
@@ -180,9 +179,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Profile -->
             </div>
         </div>
         <!-- End menu -->
+
     </div>
 </header>
 <!-- End topbar -->
