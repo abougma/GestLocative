@@ -53,6 +53,7 @@ Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLo
 Route::get('/locataire/signalement', [GestLocataireController::class, 'signalementLocataire'])->name('locataire.signalement');
 Route::get('/locataire/compte', [GestLocataireController::class, 'compteLocataire'])->name('locataire.compte');
 Route::get('/locataire/message', [GestLocataireController::class, 'messageLocataire'])->name('locataire.message');
+Route::get('/locataire/documents', [GestLocataireController::class, 'documentLocataire'])->name('locataire.documents');
 
 //Proprietaire
 Route::prefix('propriétaire')->group(function () {

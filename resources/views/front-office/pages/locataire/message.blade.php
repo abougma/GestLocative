@@ -15,21 +15,8 @@
 
             </div>
         </div>
-
     </div>
 
-    <div class="custom-setting bg-primary pe-0 d-flex flex-column rounded-start">
-            <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm rounded-end-0" id="light-dark-mode">
-                <i class="mdi mdi-brightness-7 align-middle"></i>
-                <i class="mdi mdi-white-balance-sunny align-middle"></i>
-            </button>
-            <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm" data-toggle="fullscreen">
-                <i class="mdi mdi-arrow-expand-all align-middle"></i>
-            </button>
-            <button type="button" class="btn btn-wide border-0 text-white fs-16 avatar-sm" id="layout-dir-btn">
-                <span>RTL</span>
-            </button>
-        </div>
     <div class="main-content ms-n3 mt-n5">
     <div class="page-content">
             <div class="container-fluid">
@@ -41,441 +28,32 @@
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <i class="mdi mdi-magnify search-icon fs-20"></i>
                             </div>
-                        </div>
+                            <div class="card-body border-bottom">
+                                <div class="d-flex">
+                                    <div class="align-self-center me-3">
+                                        <img src="admin-assets/assets/images/users/avatar-6.png" class="avatar-2xs avatar rounded-circle" alt="avatar-2">
+                                    </div>
+                                    <div class="flex-1">
+                                        <h5 class="font-size-15 mb-1">Ricky Clark</h5>
+                                        <p class="text-muted mb-0"><i class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
+                                    </div>
 
-                        <div class="card-body border-bottom">
-                            <div class=" d-flex align-items-center justify-content-between mb-3">
-                                <h5 class="mb-0">Online now</h5>
-                                <a href="#!">All</a>
-                            </div>
-                            <div class="hstack gap-3 flex-wrap">
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-2.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-6.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-4.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-7.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-8.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                                <div class="user-img online align-self-center">
-                                    <img src="admin-assets/assets/images/users/avatar-1.png" class="rounded-circle avatar-xs avatar" alt="avatar-2">
-                                    <span class="user-status"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-body border-bottom">
-                            <div class="d-flex">
-                                <div class="align-self-center me-3">
-                                    <img src="admin-assets/assets/images/users/avatar-6.png" class="avatar-2xs avatar rounded-circle" alt="avatar-2">
-                                </div>
-                                <div class="flex-1">
-                                    <h5 class="font-size-15 mb-1">Ricky Clark</h5>
-                                    <p class="text-muted mb-0"><i class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
-                                </div>
-
-                                <div>
-                                    <div class="dropdown chat-noti-dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="mdi mdi-dots-horizontal fs-20"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                    <div>
+                                        <div class="dropdown chat-noti-dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="mdi mdi-dots-horizontal fs-20"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="py-3 border-bottom">
-                            <h5 class="fs-14 px-3 mb-3"><i class="mdi mdi-pin align-middle text-muted"></i> Pinned</h5>
-                            <ul class="list-unstyled chat-list" data-simplebar style="max-height: 120px;">
-                                <li class="active">
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img online align-self-center me-3">
-                                                <img src="admin-assets/assets/images/users/avatar-5.png" class="rounded-circle avatar-2xs avatar" alt="avatar-2">
-                                                <span class="user-status"></span>
-                                            </div>
-
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Frank Vickery</h5>
-                                                <p class="text-truncate mb-0">Hey! there I'm available</p>
-                                            </div>
-                                            <div class="fs-11">04 min</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img away align-self-center me-3">
-                                                <img src="admin-assets/assets/images/users/avatar-4.png" class="rounded-circle avatar-2xs avatar" alt="avatar-3">
-                                                <span class="user-status"></span>
-                                            </div>
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Robert Winter</h5>
-                                                <p class="text-truncate mb-0">I've finished it! See you so</p>
-                                            </div>
-                                            <div class="fs-11">09 min</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img online align-self-center me-3">
-                                                <img src="admin-assets/assets/images/users/avatar-6.png" class="rounded-circle avatar-2xs avatar" alt="avatar-6">
-                                                <span class="user-status"></span>
-                                            </div>
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Stephen Hadley</h5>
-                                                <p class="text-truncate mb-0">I've finished it! See you so</p>
-                                            </div>
-                                            <div class="fs-11">5hrs</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img online me-3">
-                                                <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                <span class="bg-light text-body">
-                                                    C
-                                                </span>
-                                                </div>
-                                                <span class="user-status mb-2"></span>
-                                            </div>
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Crystal Elliott</h5>
-                                                <p class="text-truncate mb-0">This theme is awesome!</p>
-                                            </div>
-                                            <div class="fs-11">21 min</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img align-self-center me-3">
-                                                <img src="admin-assets/assets/images/users/avatar-4.png" class="rounded-circle avatar-2xs avatar" alt="avatar-4">
-                                                <span class="user-status"></span>
-                                            </div>
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Kristen Steele</h5>
-                                                <p class="text-truncate mb-0">Nice to meet you</p>
-                                            </div>
-                                            <div class="fs-11">1 hr</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img away me-3">
-                                                <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                <span class="bg-light text-body">
-                                                    M
-                                                </span>
-                                                </div>
-                                                <span class="user-status mb-2"></span>
-                                            </div>
-
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Mitchel Givens</h5>
-                                                <p class="text-truncate mb-0">Hey! there I'm available</p>
-                                            </div>
-                                            <div class="fs-11">3 hrs</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="d-flex">
-                                            <div class="user-img online me-3">
-                                                <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                <span class="bg-light text-body">
-                                                    K
-                                                </span>
-                                                </div>
-                                                <span class="user-status mb-2"></span>
-                                            </div>
-
-                                            <div class="flex-1 overflow-hidden">
-                                                <h5 class="text-truncate fs-14 mb-1">Tracy Penley</h5>
-                                                <p class="text-truncate mb-0">This theme is awesome!</p>
-                                            </div>
-                                            <div class="fs-11">24/03</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="chat-leftsidebar-nav pt-3">
-                            <ul class="nav nav-pills nav-justified">
-                                <li class="nav-item">
-                                    <a href="#chat" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
-                                        <i class="mdi mdi-android-messages fs-16 align-middle me-2"></i>
-                                        <span class="">Chat</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#group" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                        <i class="mdi mdi-account-multiple-outline fs-16 align-middle me-2"></i>
-                                        <span class="">Group</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-content py-3">
-                            <div class="tab-pane show active" id="chat">
-                                <div>
-                                    <h5 class="fs-14 px-3 mb-3"><i class="mdi mdi-android-messages text-muted"></i> Recent</h5>
-                                    <ul class="list-unstyled chat-list" data-simplebar style="max-height: 250px;">
-                                        <li class="active">
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img online align-self-center me-3">
-                                                        <img src="admin-assets/assets/images/users/avatar-6.png" class="rounded-circle avatar-2xs avatar" alt="avatar-2">
-                                                        <span class="user-status"></span>
-                                                    </div>
-
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Frank Vickery</h5>
-                                                        <p class="text-truncate mb-0">Hey! there I'm available</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="fs-11 mb-0">04 min</p>
-                                                        <div><i class="mdi mdi-check-all align-middle ms-2 text-info"></i></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img away align-self-center me-3">
-                                                        <img src="admin-assets/assets/images/users/avatar-3.png" class="rounded-circle avatar-2xs avatar" alt="avatar-3">
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Robert Winter</h5>
-                                                        <p class="text-truncate mb-0">I've finished it! See you so</p>
-                                                    </div>
-                                                    <div class="fs-11">09 min</div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img online me-3">
-                                                        <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                        <span class="bg-light text-body">
-                                                            C
-                                                        </span>
-                                                        </div>
-                                                        <span class="user-status mb-2"></span>
-                                                    </div>
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Crystal Elliott</h5>
-                                                        <p class="text-truncate mb-0">This theme is awesome!</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="fs-11 mb-0">21 min</p>
-                                                        <div><i class="mdi mdi-check-all align-middle ms-2 text-info"></i></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img align-self-center me-3">
-                                                        <img src="admin-assets/assets/images/users/avatar-4.png" class="rounded-circle avatar-2xs avatar" alt="avatar-4">
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Kristen Steele</h5>
-                                                        <p class="text-truncate mb-0">Nice to meet you</p>
-                                                    </div>
-                                                    <div class="fs-11">1 hr</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img away me-3">
-                                                        <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                        <span class="bg-light text-body">
-                                                            M
-                                                        </span>
-                                                        </div>
-                                                        <span class="user-status mb-2"></span>
-                                                    </div>
-
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Mitchel Givens</h5>
-                                                        <p class="text-truncate mb-0">Hey! there I'm available</p>
-                                                    </div>
-                                                    <div class="fs-11">3 hrs</div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img online align-self-center me-3">
-                                                        <img src="admin-assets/assets/images/users/avatar-6.png" class="rounded-circle avatar-2xs avatar" alt="avatar-6">
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Stephen Hadley</h5>
-                                                        <p class="text-truncate mb-0">I've finished it! See you so</p>
-                                                    </div>
-                                                    <div class="fs-11">5hrs</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="d-flex">
-                                                    <div class="user-img online me-3">
-                                                        <div class="avatar-2xs avatar avatar-circle align-self-center">
-                                                        <span class="bg-light text-body">
-                                                            K
-                                                        </span>
-                                                        </div>
-                                                        <span class="user-status mb-2"></span>
-                                                    </div>
-
-                                                    <div class="flex-1 overflow-hidden">
-                                                        <h5 class="text-truncate fs-14 mb-1">Tracy Penley</h5>
-                                                        <p class="text-truncate mb-0">This theme is awesome!</p>
-                                                    </div>
-                                                    <div class="fs-11">24/03</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane" id="group">
-                                <h5 class="fs-14 px-3 mb-3"><i class="mdi mdi-account-multiple-outline align-middle"></i> Group</h5>
-                                <ul class="list-unstyled chat-list" data-simplebar style="max-height: 250px;">
-                                    <li>
-                                        <a href="#">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-2xs avatar avatar-circle me-3">
-                                                <span class="bg-light text-body">
-                                                    G
-                                                </span>
-                                                </div>
-
-                                                <div class="flex-1">
-                                                    <h5 class="fs-14 mb-0">General</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-2xs avatar avatar-circle me-3">
-                                                <span class="bg-light text-body">
-                                                    R
-                                                </span>
-                                                </div>
-
-                                                <div class="flex-1">
-                                                    <h5 class="fs-14 mb-0">Reporting</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-2xs avatar avatar-circle me-3">
-                                                <span class="bg-light text-body">
-                                                    M
-                                                </span>
-                                                </div>
-
-                                                <div class="flex-1">
-                                                    <h5 class="fs-14 mb-0">Meeting</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-2xs avatar avatar-circle me-3">
-                                                <span class="bg-light text-body">
-                                                    A
-                                                </span>
-                                                </div>
-
-                                                <div class="flex-1">
-                                                    <h5 class="fs-14 mb-0">Project A</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-2xs avatar avatar-circle me-3">
-                                                <span class="bg-light text-body">
-                                                    B
-                                                </span>
-                                                </div>
-
-                                                <div class="flex-1">
-                                                    <h5 class="fs-14 mb-0">Project B</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-
-                    <!-- chat content -->
                     <div class="w-100 user-chat mt-4 mt-sm-0">
                         <div class="p-3 px-lg-4 user-chat-border">
                             <div class="row">
@@ -683,9 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- end row -->
-
-            </div> <!-- container-fluid -->
+            </div>
         </div>
     </div>
 

@@ -29,7 +29,7 @@
                     <a href="{{ route('locataire.signalement') }}"><i class="fas fa-exclamation-triangle"></i> <span>Signalements</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-folder"></i> <span>Documents</span></a>
+                    <a href="{{ route('locataire.documents') }}"><i class="fas fa-folder"></i> <span>Documents</span></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-trophy"></i> <span>Assurance</span></a>
@@ -41,4 +41,5 @@
         <!-- Sidebar -->
     </div>
 </div>
+
 <!-- Left Sidebar End -->

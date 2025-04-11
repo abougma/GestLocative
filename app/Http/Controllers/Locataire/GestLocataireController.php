@@ -26,4 +26,9 @@ class GestLocataireController extends Controller
     {
         return view('front-office.pages.locataire.message');
     }
+
+    public function documentLocataire()
+    {
+        return view('front-office.pages.locataire.documents');
+    }
 }
