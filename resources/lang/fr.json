@@ -1,5 +1,16 @@
 {
     "message_accueil": "L'agence immobilière à vos côtés, en ligne et dans votre quartier",
     "detail_image": "Voir détails",
-    "prix": "Prix"
+    "prix": "Prix",
+    "monCompte": "Mon compte",
+    "releverCompte": "Relevé de compte",
+    "telecharger": " Télécharger",
+    "domaine": "Domaine",
+    "equipement": "Equipement",
+    "dateCreation": "Date de création",
+    "action": "Action",
+    "piece": "Pièce",
+    "panne": "Panne",
+    "description": "Description",
+    "messageSignalement": "Ici vous pouvez voir toutes les informations relatif à vos demandes signalement"
 }

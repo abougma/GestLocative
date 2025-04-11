@@ -16,4 +16,14 @@ class GestLocataireController extends Controller
     {
         return view('front-office.pages.locataire.signalement');
     }
+
+    public function compteLocataire()
+    {
+        return view('front-office.pages.locataire.compte');
+    }
+
+    public function messageLocataire()
+    {
+        return view('front-office.pages.locataire.message');
+    }
 }

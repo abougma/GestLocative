@@ -4,8 +4,8 @@
         <div class="col-12">
             <div class="page-title-box d-flex align-items-center justify-content-between">
                 <div>
-                    <h4 class="fs-16 fw-semibold mb-1 mb-md-2">Mon compte</h4>
-                    <p class="text-muted mb-0">Ici vous pouvez voir toutes les informations de votre compte</p>
+                    <h4 class="fs-16 fw-semibold mb-1 mb-md-2">Mes signalements</h4>
+                    <p class="text-muted mb-0">{{ __('messageSignalement') }}</p>
                 </div>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
@@ -15,6 +15,18 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="custom-setting bg-primary pe-0 d-flex flex-column rounded-start">
+        <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm rounded-end-0" id="light-dark-mode">
+            <i class="mdi mdi-brightness-7 align-middle"></i>
+            <i class="mdi mdi-white-balance-sunny align-middle"></i>
+        </button>
+        <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm" data-toggle="fullscreen">
+            <i class="mdi mdi-arrow-expand-all align-middle"></i>
+        </button>
+        <button type="button" class="btn btn-wide border-0 text-white fs-16 avatar-sm" id="layout-dir-btn">
+            <span>RTL</span>
+        </button>
     </div>
     <div class="row">
         <div class="col-12">
@@ -31,14 +43,22 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Nom</th>
-                            <th>Date de création</th>
+                            <th>{{ __('domaine') }}</th>
+                            <th>{{ __('equipement') }}</th>
+                            <th>{{ __('piece') }}</th>
+                            <th>{{ __('panne') }}</th>
+                            <th>{{ __('description') }}</th>
+                            <th>{{ __('dateCreation') }}</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
 
                         <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -77,8 +97,33 @@
 
                             <div class="modal-body">
                                 <div class="d-grid gap-3">
-                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">Libellé</span>
-                                        <input type="text" required name="name" class="form-control" placeholder="Catégorie" />
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('domaine') }}</span>
+                                        <input type="text" required name="name" class="form-control" placeholder="Domaine" />
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-3">
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('equipement') }}</span>
+                                        <input type="text" required name="name" class="form-control" placeholder="Equipement" />
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-3">
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('piece') }}</span>
+                                        <input type="text" required name="name" class="form-control" placeholder="Pièce" />
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-3">
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('panne') }}</span>
+                                        <input type="text" required name="name" class="form-control" placeholder="Panne" />
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-3">
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('description') }}</span>
+                                        <input type="text" required name="name" class="form-control" placeholder="Description" />
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-3">
+                                    <div class="input-group"><span class="input-group-text" id="basic-addon1">{{ __('dateCreation') }}</span>
+                                        <input type="date" required name="name" class="form-control" placeholder="Date de création" />
                                     </div>
                                 </div>
                             </div>
