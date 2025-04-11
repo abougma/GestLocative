@@ -22,7 +22,8 @@
             <h3 class="card-title">Solde</h3>
         </div>
         <div class="card-body">
-            <p class="text-muted mb-0">Bienvenue sur votre espace locataire ! Sur cette page, vous trouverez toutes les informations essentielles concernant le statut de votre compte et de vos paiements de loyer. Vous pourrez consulter votre solde actuel, accéder à l'historique de vos paiements, et visualiser les échéances à venir pour mieux planifier vos finances. Les détails de chaque transaction, y compris les références et les modes de paiement utilisés, sont également disponibles, vous offrant ainsi une vue d'ensemble claire et détaillée de votre situation financière. De plus, vous recevrez des confirmations instantanées pour chaque paiement effectué, assurant la transparence et la sécurité de vos transactions. Découvrez également les différentes méthodes de paiement disponibles et choisissez celle qui vous convient le mieux. Nous nous engageons à vous fournir un service transparent et efficace. Si vous avez des questions ou des préoccupations concernant votre compte ou vos paiements, n'hésitez pas à contacter notre équipe de support. Nous sommes là pour vous aider !</p>
+            <p class="text-muted mb-0">Bienvenue sur votre espace locataire ! Sur cette page, vous trouverez toutes les informations essentielles concernant le statut de votre compte et de vos paiements de loyer. Vous pourrez consulter votre solde actuel, accéder à l'historique de vos paiements, et visualiser les échéances à venir pour mieux planifier vos finances. Les détails de chaque transaction, y compris les références et les modes de paiement utilisés, sont également disponibles, vous offrant ainsi une vue d'ensemble claire et détaillée de votre situation financière.
+            </p>
         </div>
         <div class="card-footer card-footer-bordered">
             <button class="btn btn-primary">Voir detail du compte</button>
@@ -40,55 +41,63 @@
             <span>RTL</span>
         </button>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="card-title">Signalement</h4>
-                    <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#add-categories">
-                        <i class="fa fa-plus-circle"></i>
-                    </button>
+
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0">Signalement</h4>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-categories">
+                <i class="fa fa-plus-circle"></i> Ajouter
+            </button>
+        </div>
+
+        <div class="card-body" style="max-height: 80vh; overflow-y: auto;">
+            <div class="row">
+                <!-- Carte 1 -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100 border-top border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Électricité - Compteur</h5>
+                            <p><strong>Pièce:</strong> Salon</p>
+                            <p><strong>Panne:</strong> Ne s'allume pas</p>
+                            <p><strong>Description:</strong> Le compteur saute régulièrement.</p>
+                            <p><strong>Date:</strong> 10/04/2025</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a class="btn btn-info btn-sm" href="#"><i class="fa fa-pen"></i> Modifier</a>
+                            <button class="btn btn-danger btn-sm" onclick='showDeleteModal("#", "#", "#")'>
+                                <i class="fa fa-trash"></i> Supprimer
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
 
-                    <table id="datatable-buttons" class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>{{ __('domaine') }}</th>
-                            <th>{{ __('equipement') }}</th>
-                            <th>{{ __('piece') }}</th>
-                            <th>{{ __('panne') }}</th>
-                            <th>{{ __('description') }}</th>
-                            <th>{{ __('dateCreation') }}</th>
-                            <th>Action</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class=" d-flex justify-content-between align-items-center">
-                                <a class="btn btn-info" href="#"  data-bs-toggle="tooltip" data-bs-original-title="Modifier">
-                                    <i class="fa fa-pen"></i>
-                                </a>
-                                <button  data-bs-toggle="tooltip" data-bs-original-title="Supprimer" class="btn btn-danger" onclick='showDeleteModal("#", "#","#")'>
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        </tbody>
-                    </table>
+                <!-- Barre de séparation -->
+                <div class="col-12 mb-2">
+                    <hr class="my-2 border border-secondary">
                 </div>
+
+                <!-- Carte 2 -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100 border-top border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Plomberie - Robinet</h5>
+                            <p><strong>Pièce:</strong> Cuisine</p>
+                            <p><strong>Panne:</strong> Fuite d'eau</p>
+                            <p><strong>Description:</strong> Le robinet goutte en permanence.</p>
+                            <p><strong>Date:</strong> 10/04/2025</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a class="btn btn-info btn-sm" href="#"><i class="fa fa-pen"></i> Modifier</a>
+                            <button class="btn btn-danger btn-sm" onclick='showDeleteModal("#", "#", "#")'>
+                                <i class="fa fa-trash"></i> Supprimer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ajoute d'autres cartes ici -->
             </div>
-        </div> <!-- end col -->
+        </div>
     </div>
 
     <!-- Ajout d'un signalement -->
