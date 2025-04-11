@@ -16,18 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="custom-setting bg-primary pe-0 d-flex flex-column rounded-start">
-        <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm rounded-end-0" id="light-dark-mode">
-            <i class="mdi mdi-brightness-7 align-middle"></i>
-            <i class="mdi mdi-white-balance-sunny align-middle"></i>
-        </button>
-        <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm" data-toggle="fullscreen">
-            <i class="mdi mdi-arrow-expand-all align-middle"></i>
-        </button>
-        <button type="button" class="btn btn-wide border-0 text-white fs-16 avatar-sm" id="layout-dir-btn">
-            <span>RTL</span>
-        </button>
-    </div>
+
     <div class="row">
         <div class="col-xxl-12">
             <div class="row">
@@ -37,9 +26,10 @@
                             <div class="card-icon text-muted"><i class="fas fa-piggy-bank"></i></div>
                             <h3 class="card-title">{{ __('releverCompte') }}</h3>
                         </div>
-                        <div class="card-body bg-primary-subtle" style="background: url('assets/images/widget-1.png'); background-repeat: no-repeat; background-position: bottom left; background-size: 130px;">
-                            <h2 class="-5 text-primary text-end my-3">$237,650</h2>
+                        <div class="card-body bg-primary-subtle" style="background: url('admin-assests/assets/images/widget-1.png'); background-repeat: no-repeat; background-position: bottom left; background-size: 130px;">
+                            <h2 class="text-primary my-3" style="text-align: left;">$237,650</h2>
                         </div>
+
                         <div class="mt-n3 text-center">
                             <button class="btn btn-info">{{ __('telecharger') }}</button>
                         </div>
@@ -76,4 +66,5 @@
             </div>
         </div>
     </div>
+
 @endsection
