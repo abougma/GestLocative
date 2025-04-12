@@ -14,5 +14,20 @@
     "piece": "Pièce",
     "panne": "Panne",
     "description": "Description",
-    "messageSignalement": "Ici vous pouvez voir toutes les informations relatif à vos demandes signalement"
+    "messageSignalement": "Ici vous pouvez voir toutes les informations relatif à vos demandes signalement",
+    "localisation": "Localisation",
+    "quartier": "Adjamé 220 logements",
+    "copyright": "© TechBoug 2025",
+    "All rights reserved.": "Tous droits réservés.",
+    "contact" : "Contact",
+    "adresse": "Lille, France",
+    "email": "bougma125@gmail.com",
+    "numero": "+33 000000000",
+    "aPropos": "À propos",
+    "autres": "Autres",
+    "services": "Services",
+    "Contactez-nous": "Contactez-nous",
+    "mentionsLegales": "Mentions légales",
+    "newsletter": "Newsletter",
+    "newsletterText": "Abonnez-vous à notre newsletter pour recevoir nos actualités et offres."
 }

@@ -38,20 +38,36 @@
                     </ul>
 
                     <!-- Ajout des boutons "Nous contacter" et "Connexion" dans le offcanvas -->
-                    <div class="d-lg-none mt-4">
-                        <a href="#" class="btn btn-sm btn-primary rounded w-100 mb-2">Nous contacter</a>
+                    <div class="d-lg-none mt-4 px-3">
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded w-100 mb-2 d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-envelope-fill"></i> Nous contacter
+                        </a>
 
-                        <div class="dropdown">
-                            <a href="#" class="btn btn-sm btn-primary rounded dropdown-toggle w-100" id="connexionDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Connexion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="connexionDropdownMobile">
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Candidat Locataire</a></li>
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Locataire</a></li>
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Propriétaire</a></li>
-                            </ul>
+                        <div class="accordion" id="accordionMobile">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingConnexion">
+                                    <button class="accordion-button collapsed btn btn-sm btn-outline-primary w-100 rounded d-flex align-items-center justify-content-center gap-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseConnexion" aria-expanded="false" aria-controls="collapseConnexion">
+                                        <i class="bi bi-box-arrow-in-right"></i> Connexion
+                                    </button>
+                                </h2>
+                                <div id="collapseConnexion" class="accordion-collapse collapse" aria-labelledby="headingConnexion" data-bs-parent="#accordionMobile">
+                                    <div class="accordion-body px-0">
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
+                                            <i class="bi bi-person-lines-fill"></i> Espace Candidat Locataire
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
+                                            <i class="bi bi-house-door-fill"></i> Espace Locataire
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
+                                            <i class="bi bi-person-badge-fill"></i> Espace Propriétaire
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
 
                     <!-- /.offcanvas-footer -->
                     <div class="offcanvas-footer d-lg-none mt-auto">
@@ -75,40 +91,68 @@
             <div class="navbar-other ms-lg-4">
                 <ul class="navbar-nav flex-row align-items-center ms-auto">
                     <li class="nav-item d-none d-md-block">
-                        <a href="#" class="btn btn-sm btn-primary rounded">Nous contacter</a>
+                        <a href="#" class="btn btn-sm btn-primary rounded">
+                            <i class="uil uil-envelope me-1"></i> Nous contacter
+                        </a>
                     </li>
+
                     @if(auth()->check())
                         <li class="nav-item dropdown d-none d-md-block">
                             <a href="#" class="nav-link" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="uil uil-user-circle" style="font-size: 40px;"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="profileDropdown">
-                                <li><a class="dropdown-item" href="#">Mon Profil</a></li>
-                                <li><a class="dropdown-item" href="#">Paramètres</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="uil uil-user me-2"></i> Mon Profil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="uil uil-setting me-2"></i> Paramètres
+                                    </a>
+                                </li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="{{ route('pages.logoutCandidatLocataire') }}">Déconnexion</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('pages.logoutCandidatLocataire') }}">
+                                        <i class="uil uil-signout me-2"></i> Déconnexion
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     @else
                         <li class="nav-item dropdown d-none d-md-block">
                             <a href="#" class="btn btn-sm btn-primary rounded dropdown-toggle" id="connexionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Connexion
+                                <i class="uil uil-user me-1"></i> Connexion
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="connexionDropdown">
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Candidat Locataire</a></li>
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Locataire</a></li>
-                                <li><a class="dropdown-item" href="{{ route('login') }}">Espace Propriétaire</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                        <i class="uil uil-user-plus me-2"></i> Espace Candidat Locataire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                        <i class="uil uil-user-md me-2"></i> Espace Locataire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                        <i class="uil uil-home-alt me-2"></i> Espace Propriétaire
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     @endif
+
                     <li class="nav-item d-lg-none">
                         <button class="hamburger offcanvas-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
                         </button>
                     </li>
                 </ul>
-                <!-- /.navbar-nav -->
             </div>
+
 
             <!-- /.navbar-other -->
         </div>

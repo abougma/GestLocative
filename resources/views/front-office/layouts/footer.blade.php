@@ -5,7 +5,7 @@
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
                     <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
-                    <p class="mb-4">© 2023 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+                    <p class="mb-4">{{ __('copyright') }}<br class="d-none d-lg-block" />{{ __('All rights reserved.')}}</p>
                     <nav class="nav social social-white">
                         <a href="#"><i class="uil uil-twitter"></i></a>
                         <a href="#"><i class="uil uil-facebook-f"></i></a>
@@ -20,22 +20,21 @@
             <!-- /column -->
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-                    <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-                    <a href="mailto:#">info@email.com</a><br /> 00 (123) 456 78 90
+                    <h4 class="widget-title text-white mb-3">{{ __('contact') }}</h4>
+                    <address class="pe-xl-15 pe-xxl-17">{{ __('adresse') }}</address>
+                    <a href="mailto:#">bougma125@gmail.com</a><br /> {{ __('numero') }}
                 </div>
                 <!-- /.widget -->
             </div>
             <!-- /column -->
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Learn More</h4>
+                    <h4 class="widget-title text-white mb-3">{{ __('autres') }}</h4>
                     <ul class="list-unstyled  mb-0">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">{{ __('aPropos') }}</a></li>
+                        <li><a href="#">{{ __('services') }}</a></li>
+                        <li><a href="#">{{ __('Contactez-nous') }}</a></li>
+                        <li><a href="#">{{ __('mentionsLegales') }}</a></li>
                     </ul>
                 </div>
                 <!-- /.widget -->
@@ -43,8 +42,8 @@
             <!-- /column -->
             <div class="col-md-12 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
-                    <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                    <h4 class="widget-title text-white mb-3">{{ __('newsletter') }}</h4>
+                    <p class="mb-5">{{ __('newsletterText') }}</p>
                     <div class="newsletter-wrapper">
                         <!-- Begin Mailchimp Signup Form -->
                         <div id="mc_embed_signup2">
