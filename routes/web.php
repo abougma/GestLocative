@@ -50,6 +50,7 @@ Route::prefix('locataire')->group(function () {
 });
 
 Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLocataire'])->name('locataire.dashboard');
+Route::get('/accueil/locataire', [GestLocataireController::class, 'accueilLocataire'])->name('locataire.accueil');
 Route::get('/locataire/signalement', [GestLocataireController::class, 'signalementLocataire'])->name('locataire.signalement');
 Route::get('/locataire/compte', [GestLocataireController::class, 'compteLocataire'])->name('locataire.compte');
 Route::get('/locataire/message', [GestLocataireController::class, 'messageLocataire'])->name('locataire.message');

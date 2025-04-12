@@ -8,7 +8,7 @@
             <!-- Left Menu Start -->
             <ul class="left-menu list-unstyled" id="side-menu">
                 <li>
-                    <a href="#" class="">
+                    <a href="{{ route('locataire.dashboard') }}" class="">
                         <i class="fas fa-desktop"></i>
                         <span>Dashboard</span>
                     </a>
@@ -17,7 +17,7 @@
                 <li class="menu-title">Mes paramètres</li>
 
                 <li>
-                    <a href="{{ route('locataire.dashboard') }}"><i class=" fas fa-home"></i> <span>Accueil</span></a>
+                    <a href="{{ route('locataire.accueil') }}"><i class=" fas fa-home"></i> <span>Accueil</span></a>
                 </li>
                 <li>
                     <a href="{{ route('locataire.compte') }}"><i class=" fas fa-piggy-bank"></i> <span>Compte</span></a>
