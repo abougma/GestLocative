@@ -132,7 +132,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                    <a class="dropdown-item" href="{{ route('locataire.dashboard') }}">
                                         <i class="uil uil-user-md me-2"></i> Espace Locataire
                                     </a>
                                 </li>
