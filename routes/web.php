@@ -45,16 +45,18 @@ Route::prefix('gestionnaire')->group(function () {
 Route::prefix('locataire')->group(function () {
 
     Route::middleware(['auth', 'role:locataire'])->group(function () {
+        Route::get('/dashboard/', [GestLocataireController::class, 'dashboardLocataire'])->name('locataire.dashboard');
+        Route::get('/accueil/', [GestLocataireController::class, 'accueilLocataire'])->name('locataire.accueil');
+        Route::get('/signalement', [GestLocataireController::class, 'signalementLocataire'])->name('locataire.signalement');
+        Route::get('/compte', [GestLocataireController::class, 'compteLocataire'])->name('locataire.compte');
+        Route::get('/message', [GestLocataireController::class, 'messageLocataire'])->name('locataire.message');
+        Route::get('/documents', [GestLocataireController::class, 'documentLocataire'])->name('locataire.documents');
     });
 
 });
 
-Route::get('/dashboard/locataire', [GestLocataireController::class, 'dashboardLocataire'])->name('locataire.dashboard');
-Route::get('/accueil/locataire', [GestLocataireController::class, 'accueilLocataire'])->name('locataire.accueil');
-Route::get('/locataire/signalement', [GestLocataireController::class, 'signalementLocataire'])->name('locataire.signalement');
-Route::get('/locataire/compte', [GestLocataireController::class, 'compteLocataire'])->name('locataire.compte');
-Route::get('/locataire/message', [GestLocataireController::class, 'messageLocataire'])->name('locataire.message');
-Route::get('/locataire/documents', [GestLocataireController::class, 'documentLocataire'])->name('locataire.documents');
+
+
 
 //Proprietaire
 Route::prefix('propriétaire')->group(function () {
