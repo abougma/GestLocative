@@ -41,28 +41,28 @@
                         </a>
 
                         @if(auth()->check())
-                            <div class="dropdown w-100">
-                                <a href="#" class="btn btn-sm btn-outline-primary rounded w-100 d-flex align-items-center justify-content-center gap-2 dropdown-toggle" id="mobileProfileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="uil uil-user-circle" style="font-size: 20px;"></i> Mon Profil
-                                </a>
-                                <ul class="dropdown-menu w-100" aria-labelledby="mobileProfileDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="uil uil-user me-2"></i> Mon Profil
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="uil uil-setting me-2"></i> Paramètres
-                                        </a>
-                                    </li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('pages.logoutCandidatLocataire') }}">
-                                            <i class="uil uil-signout me-2"></i> Déconnexion
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="accordion" id="accordionMobileLoggedIn">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingMonCompte">
+                                        <button class="accordion-button collapsed btn btn-sm btn-outline-primary w-100 rounded d-flex align-items-center justify-content-center gap-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseMonCompte" aria-expanded="false" aria-controls="collapseMonCompte">
+                                            <i class="uil uil-user-circle me-2"></i> Mon Compte
+                                        </button>
+                                    </h2>
+                                    <div id="collapseMonCompte" class="accordion-collapse collapse" aria-labelledby="headingMonCompte" data-bs-parent="#accordionMobileLoggedIn">
+                                        <div class="accordion-body px-0">
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                                <i class="uil uil-user me-2"></i> Mon Profil
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                                                <i class="uil uil-setting me-2"></i> Paramètres
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('pages.logoutCandidatLocataire') }}">
+                                                <i class="uil uil-signout me-2"></i> Déconnexion
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         @else
                             <div class="accordion" id="accordionMobile">
@@ -89,6 +89,7 @@
                                 </div>
                             </div>
                         @endif
+
                     </div>
 
 
