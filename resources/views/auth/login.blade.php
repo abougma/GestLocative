@@ -51,7 +51,7 @@
                                     </form>
                                     <!-- /form -->
                                     <p class="mb-1"><a href="{{ route('password.request') }}" class="hover">Mot de passe oublie?</a></p>
-                                    <p class="mb-0">Vous n'avez pas de compte? <a href="{{ route('register') }}" class="hover">S'enregistrer</a></p>
+                                    <p>Pas encore de compte ? <a href="{{ route('register', ['role' => request('role')]) }}">Créer un compte</a></p>
                                     <div class="divider-icon my-4">ou</div>
                                     <nav class="nav social justify-content-center text-center">
                                         <a href="#" class="btn btn-circle btn-sm btn-google"><i class="uil uil-google"></i></a>

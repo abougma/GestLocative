@@ -35,6 +35,7 @@
                                     <p class="lead mb-6 text-start">L’inscription prend moins d’une minute..</p>
                                     <!-- Formulaire d'inscription -->
                                     <form class="text-start mb-3" method="POST" action="{{ route('register') }}">
+                                        <input type="hidden" name="role" value="{{ $role }}">
                                         @csrf
                                         <div class="form-floating mb-4">
                                             <input type="text" class="form-control" placeholder="Name" id="loginName" name="name" value="{{ old('name') }}">

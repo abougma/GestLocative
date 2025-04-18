@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -28,7 +29,22 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected function redirectTo()
+    {
+        $role = auth()->user()->role;
+
+        switch ($role) {
+            case 'locataire':
+                return route('locataire.dashboard');
+            case 'proprietaire':
+                return route('proprietaire.dashboard');
+            case 'gestionnaire':
+                return route('gestionnaire.dashboard');
+            default:
+                return '/home';
+        }
+    }
+
 
     /**
      * Create a new controller instance.
@@ -52,7 +68,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'role' => ['nullable', 'string', 'in:candidatLoc,gestionnaire','locataire','proprietaire','superUser'],
+            'role' => ['nullable', 'string', 'in:candidatLoc,gestionnaire,locataire,proprietaire,superUser'],
         ]);
     }
 
@@ -70,5 +86,11 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'role' => $data['role'] ?? 'candidatLoc',
         ]);
+    }
+
+    public function showRegistrationForm(Request $request)
+    {
+        $role = $request->query('role', 'candidatLoc'); // valeur par défaut si rien n’est passé
+        return view('auth.register', compact('role'));
     }
 }
