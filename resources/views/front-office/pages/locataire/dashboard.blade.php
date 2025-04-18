@@ -7,7 +7,7 @@
                     <div class="card-icon">
                         <i class="fas fa-align-right fs-14 text-muted"></i>
                     </div>
-                    <h4 class="card-title mb-0">{{ __('accueil') }}</h4>
+                    <h4 class="card-title mb-0">{{ __('Dashboard') }}</h4>
 
                 </div>
                 <div class="card-body">
