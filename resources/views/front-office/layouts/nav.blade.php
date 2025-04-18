@@ -50,14 +50,15 @@
                                 </h2>
                                 <div id="collapseConnexion" class="accordion-collapse collapse" aria-labelledby="headingConnexion" data-bs-parent="#accordionMobile">
                                     <div class="accordion-body px-0">
-                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
-                                            <i class="bi bi-person-lines-fill"></i> Espace Candidat Locataire
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'candidatLoc']) }}">
+                                            <i class="uil uil-user-plus me-2"></i> Espace Candidat Locataire
                                         </a>
-                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'locataire']) }}">
                                             <i class="bi bi-house-door-fill"></i> Espace Locataire
                                         </a>
-                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login') }}">
-                                            <i class="bi bi-person-badge-fill"></i> Espace Propriétaire
+
+                                        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'propriétaire']) }}">
+                                            <i class="uil uil-home-alt me-2"></i> Espace Propriétaire
                                         </a>
                                     </div>
                                 </div>
@@ -124,17 +125,17 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="connexionDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'candidatLoc']) }}">
                                         <i class="uil uil-user-plus me-2"></i> Espace Candidat Locataire
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('login') }}">
-                                        <i class="uil uil-user-md me-2"></i> Espace Locataire
+                                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'locataire']) }}">
+                                        <i class="bi bi-house-door-fill"></i> Espace Locataire
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('login') }}">
+                                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'propriétaire']) }}">
                                         <i class="uil uil-home-alt me-2"></i> Espace Propriétaire
                                     </a>
                                 </li>
