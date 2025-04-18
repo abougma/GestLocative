@@ -4,12 +4,12 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">Sweetalert</h4>
+                <h4 class="mb-sm-0">Mes documents</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Elements</a></li>
-                        <li class="breadcrumb-item active">Sweetalert</li>
+                        <li class="breadcrumb-item active">Mes documents</li>
                     </ol>
                 </div>
 
@@ -37,45 +37,36 @@
                                 <div class="d-grid gap-3">
                                     <div class="row">
                                         <div class="col-sm-4 col-lg-2">
-                                            <label class="col-form-label text-sm-end">Basic example</label>
+                                            <label class="col-form-label text-sm-end">Contrat de bail</label>
                                         </div>
                                         <div class="col-sm-8 col-lg-10">
-                                            <button class="btn btn-primary" id="swal-1">Click me</button>
+                                            <button class="btn btn-primary" id="swal-1">Télécharger</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 col-lg-2">
-                                            <label class="col-form-label text-sm-end">Subtitle</label>
+                                            <label class="col-form-label text-sm-end">Document d'assurance</label>
                                         </div>
                                         <div class="col-sm-8 col-lg-10">
-                                            <button class="btn btn-primary" id="swal-2">Click me</button>
+                                            <button class="btn btn-primary" id="swal-2">Télécharger</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 col-lg-2">
-                                            <label class="col-form-label text-sm-end">More content</label>
+                                            <label class="col-form-label text-sm-end">Etat des lieux entrant</label>
                                         </div>
                                         <div class="col-sm-8 col-lg-10">
-                                            <button class="btn btn-primary" id="swal-3">Click me</button>
+                                            <button class="btn btn-primary" id="swal-3">Télécharger</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 col-lg-2">
-                                            <label class="col-form-label text-sm-end">Custom HTML</label>
+                                            <label class="col-form-label text-sm-end">Notice d'information</label>
                                         </div>
                                         <div class="col-sm-8 col-lg-10">
-                                            <button class="btn btn-primary" id="swal-4">Click me</button>
+                                            <button class="btn btn-primary" id="swal-4">Télécharger</button>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-lg-2">
-                                            <label class="col-form-label text-sm-end">More buttons</label>
-                                        </div>
-                                        <div class="col-sm-8 col-lg-10">
-                                            <button class="btn btn-primary" id="swal-5">Click me</button>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>

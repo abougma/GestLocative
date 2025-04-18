@@ -31,9 +31,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" >Vacances</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('locataire.dashboard') }}">Locataire</a>
-                        </li>
 
                     </ul>
 
