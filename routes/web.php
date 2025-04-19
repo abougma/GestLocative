@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CandidatLocataire\DashboardController;
+use App\Http\Controllers\Gestionnaire\GestGestionnaireController;
 use App\Http\Controllers\Locataire\GestLocataireController;
 use App\Http\Controllers\LoginAdmin\LogoutController;
 use Illuminate\Support\Facades\Auth;
@@ -33,11 +34,11 @@ Route::prefix('candidatLocataire')->group(function () {
 
 });
 
-//Gestionnaire
+//gestionnaire
 Route::prefix('gestionnaire')->group(function () {
 
     Route::middleware(['auth', 'role:gestionnaire'])->group(function () {
-
+        Route::get('/dashboard', [GestGestionnaireController::class, 'dashboardGestionnaire'])->name('gestionnaire.dashboard');
     });
 });
 

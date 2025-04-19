@@ -40,6 +40,20 @@ class LoginController extends Controller
         }
 
         return redirect('/welcome'); // Redirection par défaut
+
+    }
+
+    /**
+     * Handle a failed login attempt.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        return redirect()->route('login')
+            ->withErrors(['email' => 'Les informations de connexion sont incorrectes.'])
+            ->withInput();
     }
 
     /**
