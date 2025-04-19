@@ -168,11 +168,11 @@
                         <div class="card border-0">
                             <div class="card-body text-center p-3">
                                 <img src="admin-assets/assets/images/users/avatar-6.png" alt="User Avatar" class="rounded-circle mb-2" style="width: 50px; height: 50px;">
-                                <h6 class="card-title mb-1">#</h6>
-                                <p class="card-text text-muted mb-2">#</p>
+                                <h6 class="card-title mb-1">{{ Auth::user()->name }}</h6>
+                                <p class="card-text text-muted mb-2">{{ Auth::user()->email }} </p>
                             </div>
                             <div class="card-footer text-center bg-light border-0">
-                                <a href="#" class="btn btn-danger btn-sm">
+                                <a href="{{ route('pages.logoutCandidatLocataire') }}" class="btn btn-danger btn-sm">
                                     <i class="fas fa-sign-out-alt me-1"></i> Déconnexion
                                 </a>
                             </div>

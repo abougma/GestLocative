@@ -36,4 +36,9 @@ class GestLocataireController extends Controller
     {
         return view('front-office.pages.locataire.documents');
     }
+
+    public function assuranceLocataire()
+    {
+        return view('front-office.pages.locataire.assurance');
+    }
 }
