@@ -19,8 +19,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /section -->
-    <section class="wrapper bg-light">
+    <!-- /section --><section class="wrapper bg-light">
         <div class="container pb-14 pb-md-16">
             <div class="row">
                 <div class="col mt-n19">
@@ -33,6 +32,15 @@
                                 <div class="p-10 p-md-11 p-lg-13">
                                     <h2 class="mb-3 text-start">Bienvenue</h2>
                                     <p class="lead mb-6 text-start">Remplissez votre adresse e-mail et votre mot de passe pour vous connecter..</p>
+                                    @if($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                     <form class="text-start mb-3" method="POST" action="{{ route('login') }}">
                                         @csrf <!-- Protection CSRF -->
 
@@ -74,5 +82,6 @@
         </div>
         <!-- /.container -->
     </section>
+
     <!-- /section -->
 @endsection

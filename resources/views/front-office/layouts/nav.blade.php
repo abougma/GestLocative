@@ -84,6 +84,9 @@
                                             <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'propriétaire']) }}">
                                                 <i class="uil uil-home-alt me-2"></i> Espace Propriétaire
                                             </a>
+                                            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'gestionnaire']) }}">
+                                                <i class="uil uil-home-alt me-2"></i> Espace Gestionnaire
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,6 +167,11 @@
                                 <li>
                                     <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'propriétaire']) }}">
                                         <i class="uil uil-home-alt me-2"></i> Espace Propriétaire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('login', ['role' => 'gestionnaire']) }}">
+                                        <i class="uil uil-home-alt me-2"></i> Espace Gestionnaire
                                     </a>
                                 </li>
                             </ul>

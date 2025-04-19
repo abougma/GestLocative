@@ -17,7 +17,7 @@ class gestionnaire extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Bougma Gestionnaire',
+            'name' => 'Bougma gestionnaire',
             'email' => 'gestionnaire@gmail.com',
             'password' => Hash::make('gestionnaire123'),
             'role' => 'gestionnaire',
