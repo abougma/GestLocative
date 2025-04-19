@@ -51,6 +51,7 @@ Route::prefix('locataire')->group(function () {
         Route::get('/compte', [GestLocataireController::class, 'compteLocataire'])->name('locataire.compte');
         Route::get('/message', [GestLocataireController::class, 'messageLocataire'])->name('locataire.message');
         Route::get('/documents', [GestLocataireController::class, 'documentLocataire'])->name('locataire.documents');
+        Route::get('/assurance', [GestLocataireController::class, 'assuranceLocataire'])->name('locataire.assurance');
     });
 
 });

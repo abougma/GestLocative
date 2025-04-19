@@ -22,9 +22,12 @@
                 <li>
                     <a href="{{ route('locataire.compte') }}"><i class=" fas fa-piggy-bank"></i> <span>Compte</span></a>
                 </li>
-                <li>
+                {{--
+                    <li>
                     <a href="{{ route('locataire.message') }}"><i class=" fas fa-envelope-open-text"></i> <span>Message</span></a>
                 </li>
+                --}}
+
                 <li>
                     <a href="{{ route('locataire.signalement') }}"><i class="fas fa-exclamation-triangle"></i> <span>Signalements</span></a>
                 </li>
@@ -32,9 +35,8 @@
                     <a href="{{ route('locataire.documents') }}"><i class="fas fa-folder"></i> <span>Documents</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-trophy"></i> <span>Assurance</span></a>
+                    <a href="{{ route('locataire.assurance') }}"><i class="fa fa-trophy"></i> <span>Assurance</span></a>
                 </li>
-
 
             </ul>
         </div>
