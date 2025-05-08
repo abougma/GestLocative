@@ -37,7 +37,7 @@
 
                     <li class="menu-title">Gestion</li>
 
-                    <li><a href="#"><i class="fas fa-building"></i> <span>Mes biens</span></a></li>
+                    <li><a href="{{ route('gestionnaire.biens') }}"><i class="fas fa-building"></i> <span>Mes biens</span></a></li>
                     <li><a href="#"><i class="fas fa-users"></i> <span>Candidatures</span></a></li>
                     <li><a href="#"><i class="fas fa-exclamation-triangle"></i> <span>Signalements</span></a></li>
                     <li><a href="#"><i class="fas fa-folder-open"></i> <span>Documents</span></a></li>

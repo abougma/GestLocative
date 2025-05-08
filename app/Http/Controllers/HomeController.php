@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bien;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +25,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function indexWelcome()
+    {
+        // Par exemple, récupérer des biens immobiliers à afficher dans la vue
+        $biens = Bien::all(); // Bien sûr, il vous faut un modèle 'Bien' avec une table correspondante
+
+        return view('welcome', compact('biens'));
     }
 }

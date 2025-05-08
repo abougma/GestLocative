@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class ImageBien extends Model
 {
@@ -18,6 +19,16 @@ class ImageBien extends Model
         'chemin_image',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($bien) {
+            if (empty($bien->id)) {
+                $bien->id = (string) Str::uuid(); // Génére un UUID si non défini
+            }
+        });
+    }
     public function bien()
     {
         return $this->belongsTo(Bien::class, 'bien_id');

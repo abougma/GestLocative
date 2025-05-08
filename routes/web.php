@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CandidatLocataire\DashboardController;
 use App\Http\Controllers\Gestionnaire\GestGestionnaireController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Locataire\GestLocataireController;
 use App\Http\Controllers\LoginAdmin\LogoutController;
 use Illuminate\Support\Facades\Auth;
@@ -18,9 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [HomeController::class, 'indexWelcome']);
 
 //Candidat Locataire
 Route::prefix('candidatLocataire')->group(function () {
@@ -39,6 +38,11 @@ Route::prefix('gestionnaire')->group(function () {
 
     Route::middleware(['auth', 'role:gestionnaire'])->group(function () {
         Route::get('/dashboard', [GestGestionnaireController::class, 'dashboardGestionnaire'])->name('gestionnaire.dashboard');
+        Route::get('/mesBiens', [GestGestionnaireController::class, 'biensGestionnaire'])->name('gestionnaire.biens');
+        Route::post('/mesBiens', [GestGestionnaireController::class, 'biensGestionnaireStore'])->name('gestionnaire.biens.store');
+        Route::get('/bien/{id}/delete', [GestGestionnaireController::class, 'deleteBien'])->name('gestionnaire.bien.delete');
+
+
     });
 });
 
