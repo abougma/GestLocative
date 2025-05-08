@@ -31,5 +31,12 @@
     "Contactez-nous": "Contactez-nous",
     "mentionsLegales": "Mentions légales",
     "newsletter": "Newsletter",
-    "newsletterText": "Abonnez-vous à notre newsletter pour recevoir nos actualités et offres."
+    "newsletterText": "Abonnez-vous à notre newsletter pour recevoir nos actualités et offres.",
+    "titre": "Titre",
+    "type": "Types",
+    "adresseChamps": "Adresse",
+    "images": "Images",
+    "messageBiens": "Ici vous pouvez voir toutes les informations relatif à vos biens"
+
+
 }

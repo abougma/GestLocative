@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Bien extends Model
 {
@@ -22,9 +23,19 @@ class Bien extends Model
         'gestionnaire_id',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($bien) {
+            if (empty($bien->id)) {
+                $bien->id = (string) Str::uuid(); // Génére un UUID si non défini
+            }
+        });
+    }
     public function gestionnaire()
     {
-        return $this->belongsTo(Utilisateur::class, 'gestionnaire_id');
+        return $this->belongsTo(User::class, 'gestionnaire_id');
     }
 
     public function images()
